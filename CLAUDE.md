@@ -1,8 +1,12 @@
-# Influencer Team — bp-influence
+# bp-influence — Influencer + PR Teams
 
-This workspace contains **25 specialist subagents** representing a complete influencer marketing team. Each agent has domain expertise, specific KPIs, and structured output standards.
+This workspace contains **35 specialist subagents** (25 Influencer Marketing + 10 PR) and **24 reusable skills** (18 Influencer + 6 PR) for full-cycle brand communications.
 
-## Team Structure
+---
+
+## Influencer Marketing Team (25 agents)
+
+### Team Structure
 
 ### Section 1: Strategy & Leadership
 | # | Agent | Model | Use For |
@@ -60,6 +64,38 @@ This workspace contains **25 specialist subagents** representing a complete infl
 | 23 | `gaming-specialist` | Sonnet | Twitch/YouTube Gaming, livestream activations, esports |
 | 24 | `virtual-influencer-manager` | Sonnet | CGI/AI creators, synthetic content ethics |
 | 25 | `localisation-manager` | Sonnet | Regional adaptation, multi-language, cross-market comparison |
+
+---
+
+## PR Team (10 agents)
+
+### Section 9: PR Strategy & Leadership
+| # | Agent | Model | Use For |
+|---|-------|-------|--------|
+| 26 | `pr-director` | Opus | PR strategy, reputation management, SOV, media landscape, C-suite reporting |
+| 27 | `crisis-communications-manager` | Opus | Crisis playbooks, rapid response, reputation recovery, post-crisis analysis |
+
+### Section 10: Media Relations
+| # | Agent | Model | Use For |
+|---|-------|-------|--------|
+| 28 | `media-relations-manager` | Sonnet | Journalist relationships, press coverage, media database, pitch strategy |
+| 29 | `press-secretary` | Sonnet | Official statements, media training, talking points, Q&A preparation |
+| 30 | `digital-pr-specialist` | Sonnet | SEO-PR, backlinks, online reputation, data-driven content, digital media |
+
+### Section 11: Communications & Content
+| # | Agent | Model | Use For |
+|---|-------|-------|--------|
+| 31 | `corporate-communications-manager` | Sonnet | Internal comms, stakeholder messaging, employer branding, corporate narrative |
+| 32 | `pr-content-writer` | Sonnet | Press releases, op-eds, thought leadership, award submissions, bylines |
+
+### Section 12: Events, Analytics & Reputation
+| # | Agent | Model | Use For |
+|---|-------|-------|--------|
+| 33 | `event-launch-coordinator` | Haiku | Press events, product launches, media dinners, logistics, run sheets |
+| 34 | `pr-analytics-specialist` | Haiku | Media monitoring, SOV tracking, sentiment analysis, EMV, PR dashboards |
+| 35 | `brand-reputation-manager` | Sonnet | Brand perception, review management, SERP reputation, brand health |
+
+---
 
 ## How to Use
 
@@ -134,6 +170,26 @@ Use the campaign-brief skill to create a brief for our Summer 2025 skincare laun
 | `rate-card` | Market rate benchmarks by tier/platform + negotiation framework |
 | `tier-definitions` | Influencer tier classification, characteristics, and strategic mix |
 
+### PR Skills
+
+#### Media & Outreach
+| Skill | Description |
+|-------|-------------|
+| `press-release` | Full press release generator with AP style, distribution checklist, social copy |
+| `media-pitch` | Personalised pitch templates — standard, exclusive, reactive, follow-ups |
+| `media-kit` | Complete press/media kit builder — company info, assets, leadership bios |
+
+#### Events & Crisis
+| Skill | Description |
+|-------|-------------|
+| `event-brief` | Press event / launch brief with run sheet, budget, logistics, measurement |
+| `crisis-response-plan` | Crisis playbook — RACE framework, stakeholder comms, Q&A, recovery plan |
+
+#### Reporting
+| Skill | Description |
+|-------|-------------|
+| `pr-report` | PR performance report — coverage, SOV, sentiment, EMV, outreach metrics |
+
 ## Combining Agents + Skills
 
 For maximum power, combine an agent with a skill:
@@ -150,8 +206,32 @@ Use the legal-advisor agent with the disclosure-checklist skill to audit our lat
 Use the analytics-manager agent with the roi-calculator skill to build the business case for scaling our Q2 programme.
 ```
 
+```
+Use the crisis-communications-manager agent with the crisis-response-plan skill to prepare a playbook for a product recall scenario.
+```
+
+```
+Use the media-relations-manager agent with the media-pitch skill to pitch our launch story to Tier 1 tech journalists.
+```
+
+```
+Use the pr-content-writer agent with the press-release skill to write the announcement for our Series B funding round.
+```
+
+## Cross-Team Workflows
+
+Influencer + PR teams work together:
+
+```
+Use the pr-director agent to develop a PR strategy, then the influencer-strategist to align the influencer campaign with the PR narrative.
+```
+
+```
+Use the event-launch-coordinator agent with the event-brief skill for the press launch, then the outreach-coordinator to invite creators to the same event.
+```
+
 ## Model Assignment Rationale
 
-- **Opus** — Strategic leadership and high-stakes decisions (Head of Marketing, Creative Director, Legal)
+- **Opus** — Strategic leadership and high-stakes decisions (PR Director, Crisis Comms, Head of Marketing, Creative Director, Legal)
 - **Sonnet** — Core specialist work requiring domain expertise (most roles)
-- **Haiku** — High-volume operational tasks (Outreach, Video Editing, Data Analyst, Community, Social)
+- **Haiku** — High-volume operational tasks (Events, PR Analytics, Outreach, Video Editing, Data Analyst, Community, Social)
